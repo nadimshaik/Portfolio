@@ -15,8 +15,8 @@ const About: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
-       I have 4+ years experience in IT and 3.5 years experience in as ReactJS or Front-End Developer.
-       I worked on Tech Stack JavaScript ReactJS Redux NodeJS ExpressJS MongoDB.
+       I have 4+ years experience in IT and 4 years experience in as ReactJS or Front-End Developer.
+       I have working on Tech Stack JavaScript ReactJS Redux NodeJS ExpressJS MongoDB.
        Looking opportunity less tha 15 days joiner.
       </h6>
       <div
