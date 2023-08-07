@@ -32,7 +32,7 @@ export const services: Service[] = [
   },
   {
     Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
+    title: "UI designer",
     about:
       "stunning user interface designer using <b>Figma</b> ",
   },

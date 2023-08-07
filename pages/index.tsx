@@ -9,11 +9,16 @@ import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { Service } from "../types";
 
-const About: NextPage = () => {
-  // console.log(services);
+import Head from "next/head"
+
+const About = ({endpoint}) => {
+  console.log(endpoint);
 
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
+      <Head>
+        <title> Web Developer | Portfolio | Nadeem Khatik </title>
+      </Head>
       <h6 className="my-3 text-base font-medium">
        I have 4+ years experience in IT and 4 years experience in as ReactJS or Front-End Developer.
        I have working on Tech Stack JavaScript ReactJS Redux NodeJS ExpressJS MongoDB.
@@ -43,14 +48,14 @@ const About: NextPage = () => {
 };
 
 //!called every time  the page refreshed
-// export const getServerSideProps: GetServerSideProps = async (
-//    context: GetServerSidePropsContext
-// ) => {
-//    const res = await fetch('http://localhost:3000/api/services')
-//    const data = await res.json()
-//    console.log(data)
-//    return { props: { services: data.services } }
-// }
+export const getServerSideProps: GetServerSideProps = async (
+   context: GetServerSidePropsContext
+) => {
+  //  const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  //  const data = await res.json()
+  //  console.log(data)
+   return { props: { endpoint: process.env.VERCEL_URL } }
+}
 
 //!called only during the build of the project
 //? make sure the server(localhost:3000)[this will receive the request during build] is running on a terminal during the build

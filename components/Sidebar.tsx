@@ -35,11 +35,11 @@ const Sidebar = () => {
       {/* Socials */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
       
-        <Link href="https://www.linkedin.com/in/nadimkhatik/" target="blank">
+        <Link href="https://www.linkedin.com/in/nadimkhatik/" target="blank" aria-label="Linkedin">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </Link>
-        <Link href="https://github.com/nadimshaik" target="blank">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />{" "}
+        <Link href="https://github.com/nadimshaik" target="blank" aria-label="Github">
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </Link>
       </div>
 
